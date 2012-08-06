@@ -11,6 +11,15 @@
 
 @implementation TBTypedArray
 
+- (id)init {
+	self = [super init];
+	if(self) {
+		array = [[NSMutableArray alloc] init];
+		klass = [NSObject class];
+	}
+	return self;
+}
+
 - (NSUInteger)count {
 	return [array count];
 }

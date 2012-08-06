@@ -15,6 +15,13 @@
 	return [anObject isKindOfClass:klass];
 }
 
+- (void)initWithType:(Class)_klass andCapacity:(NSUInteger)capacity {
+	self = [super init];
+	if(self) {
+		array = [[NSMutableArray alloc] initWithCapacity:capacity];
+	}
+}
+
 - (NSUInteger)count {
 	return [super count];
 }
