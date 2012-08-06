@@ -10,6 +10,8 @@
 		9525366215CFC51A0059F9E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9525366115CFC51A0059F9E3 /* Foundation.framework */; };
 		9525366515CFC51A0059F9E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9525366415CFC51A0059F9E3 /* main.m */; };
 		9525366915CFC51A0059F9E3 /* TBTypedArrayExample.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9525366815CFC51A0059F9E3 /* TBTypedArrayExample.1 */; };
+		9525367A15CFC6260059F9E3 /* TBTypedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 9525367715CFC5610059F9E3 /* TBTypedArray.m */; };
+		9525367B15CFC6280059F9E3 /* TBMutableTypedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 9525367915CFC5610059F9E3 /* TBMutableTypedArray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +31,12 @@
 		9525365D15CFC51A0059F9E3 /* TBTypedArrayExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TBTypedArrayExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		9525366115CFC51A0059F9E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9525366415CFC51A0059F9E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9525366715CFC51A0059F9E3 /* TBTypedArrayExample-Prefix.pch */ = {isa = PBXFileReference; path = "TBTypedArrayExample-Prefix.pch"; sourceTree = "<group>"; };
+		9525366715CFC51A0059F9E3 /* TBTypedArrayExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TBTypedArrayExample-Prefix.pch"; sourceTree = "<group>"; };
 		9525366815CFC51A0059F9E3 /* TBTypedArrayExample.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TBTypedArrayExample.1; sourceTree = "<group>"; };
+		9525367615CFC5610059F9E3 /* TBTypedArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBTypedArray.h; sourceTree = "<group>"; };
+		9525367715CFC5610059F9E3 /* TBTypedArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBTypedArray.m; sourceTree = "<group>"; };
+		9525367815CFC5610059F9E3 /* TBMutableTypedArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBMutableTypedArray.h; sourceTree = "<group>"; };
+		9525367915CFC5610059F9E3 /* TBMutableTypedArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBMutableTypedArray.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 			children = (
 				9525366415CFC51A0059F9E3 /* main.m */,
 				9525366815CFC51A0059F9E3 /* TBTypedArrayExample.1 */,
+				9525367415CFC5570059F9E3 /* TBTypedArray */,
 				9525366615CFC51A0059F9E3 /* Supporting Files */,
 			);
 			path = TBTypedArrayExample;
@@ -86,6 +93,17 @@
 				9525366715CFC51A0059F9E3 /* TBTypedArrayExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9525367415CFC5570059F9E3 /* TBTypedArray */ = {
+			isa = PBXGroup;
+			children = (
+				9525367615CFC5610059F9E3 /* TBTypedArray.h */,
+				9525367715CFC5610059F9E3 /* TBTypedArray.m */,
+				9525367815CFC5610059F9E3 /* TBMutableTypedArray.h */,
+				9525367915CFC5610059F9E3 /* TBMutableTypedArray.m */,
+			);
+			path = TBTypedArray;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9525366515CFC51A0059F9E3 /* main.m in Sources */,
+				9525367A15CFC6260059F9E3 /* TBTypedArray.m in Sources */,
+				9525367B15CFC6280059F9E3 /* TBMutableTypedArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +248,7 @@
 				9525366E15CFC51A0059F9E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
